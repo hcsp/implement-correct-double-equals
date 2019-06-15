@@ -1,13 +1,12 @@
 package com.github.hcsp.datatype;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-class MainTest {
+public class MainTest {
     @Test
     public void numberEqualsTest() {
-        assertEquals(true, Main.doubleEquals(0.1 + 0.2, 0.3));
-        assertEquals(false, Main.doubleEquals(0.1, 0.2));
+        Assertions.assertEquals(true, Main.doubleEquals(0.1 + 0.2, 0.3));
+        Assertions.assertEquals(false, Main.doubleEquals(0.1, 0.2));
     }
 }
