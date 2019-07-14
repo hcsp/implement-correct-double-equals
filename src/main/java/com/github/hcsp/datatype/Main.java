@@ -9,8 +9,6 @@ public class Main {
 
     // 判断两个double是否相等
     public static boolean doubleEquals(double a, double b) {
-      //double g=2d;
-      Double.compare(a,b);
-      return true;
+      return Double.compare(a,b)==0;
     }
 }
