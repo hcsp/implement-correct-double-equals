@@ -9,6 +9,7 @@ public class Main {
 
     // 判断两个double是否相等
     public static boolean doubleEquals(double a, double b) {
-        return a == b;
+        return Math.abs(a - b) < 1e-5; // 相减后的绝对值很小时，可近似认为是相等的
+//        return a == b;
     }
 }
