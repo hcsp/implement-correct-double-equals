@@ -9,6 +9,11 @@ public class Main {
 
     // 判断两个double是否相等
     public static boolean doubleEquals(double a, double b) {
-        return a == b;
+        if (b-a <= 1e-7)
+        {
+            return true;
+        }
+        else
+            return false;
     }
 }
