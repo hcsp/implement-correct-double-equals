@@ -8,5 +8,6 @@ public class MainTest {
     public void numberEqualsTest() {
         Assertions.assertEquals(true, Main.doubleEquals(0.1 + 0.2, 0.3));
         Assertions.assertEquals(false, Main.doubleEquals(0.1, 0.2));
+        Assertions.assertEquals(false, Main.doubleEquals(0.2, 0.1));
     }
 }
