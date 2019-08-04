@@ -9,7 +9,7 @@ public class Main {
 
     // 判断两个double是否相等
     public static boolean doubleEquals(double a, double b) {
-        if (b-a <= 1e-7)
+        if (Math.abs(b-a) <= 1e-7)
         {
             return true;
         }
