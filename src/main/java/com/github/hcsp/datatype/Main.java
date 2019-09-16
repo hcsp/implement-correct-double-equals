@@ -10,7 +10,7 @@ public class Main {
     // 判断两个double是否相等
     public static boolean doubleEquals(double a, double b) {
         if (Math.abs(a) - Math.abs(b) < 0.000001 ){
-             a = b;
+            
         }
         return true;
     }
