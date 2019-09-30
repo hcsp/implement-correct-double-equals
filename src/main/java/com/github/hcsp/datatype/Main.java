@@ -9,6 +9,9 @@ public class Main {
 
     // 判断两个double是否相等
     public static boolean doubleEquals(double a, double b) {
-        return a == b;
+//        System.out.println("a-b = " + (a-b));
+        double delta =  Math.abs(a-b);
+        System.out.println("delta: = " + delta);
+        return delta < 0.00001;
     }
 }
