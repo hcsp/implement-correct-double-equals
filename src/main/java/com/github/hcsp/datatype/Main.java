@@ -1,8 +1,5 @@
 package com.github.hcsp.datatype;
 
-import sun.lwawt.macosx.CSystemTray;
-
-import java.math.BigDecimal;
 
 public class Main {
     public static void main(String[] args) {
