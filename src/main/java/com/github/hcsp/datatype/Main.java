@@ -1,6 +1,5 @@
 package com.github.hcsp.datatype;
 
-
 public class Main {
     public static void main(String[] args) {
         // 这里应该输出true，实际输出的却是false
@@ -10,13 +9,6 @@ public class Main {
 
     // 判断两个double是否相等
     public static boolean doubleEquals(double a, double b) {
-        System.out.println(a);
-        System.out.println(b);
-
-        if(Math.abs(a-b)< 0.00000001) {
-            return true;
-        }else  {
-            return false;
-        }
+        return a == b;
     }
 }
