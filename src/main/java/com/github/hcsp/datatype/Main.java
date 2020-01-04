@@ -13,9 +13,10 @@ public class Main {
 
     // 判断两个double是否相等
     public static boolean doubleEquals(double a, double b) {
-//        System.out.println(a);
-//        System.out.println(b);
-        return (float) a == (float) b;
-//        return  a == b;
+        a = Double.doubleToLongBits(a);
+        b = Double.doubleToLongBits(b);
+        System.out.println(a);
+        System.out.println(b);
+        return  a == b;
     }
 }
