@@ -7,8 +7,8 @@ public class Main {
         System.out.println(doubleEquals(0.1 + 0.2, 0.3));
     }
 
-    // 判断两个double是否相等 fix
+    // 判断两个double是否相等
     public static boolean doubleEquals(double a, double b) {
-         return (a - b) <= 0.0000000000000001;
+         return Math.abs(a - b) <= 0.0000000000000001;
     }
 }
