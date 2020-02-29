@@ -9,8 +9,6 @@ public class Main {
 
     // 判断两个double是否相等
     public static boolean doubleEquals(double a, double b) {
-        //双精度浮点判断允许有误差，判断误差是否小于00000000001，满足条件即通过
-        return Math.abs(a-b)<0.00000000001;
-
+        return a == b;
     }
 }
