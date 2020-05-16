@@ -9,6 +9,8 @@ public class Main {
 
     // 判断两个double是否相等
     public static boolean doubleEquals(double a, double b) {
-        return a == b;
+//        Double num1 = Double.valueOf(String.format("%.2f", a ));
+//        Double num2 = Double.valueOf(String.format("%.2f", b ));
+        return Double.valueOf(String.format("%.2f", a )).equals(Double.valueOf(String.format("%.2f", b )));
     }
 }
