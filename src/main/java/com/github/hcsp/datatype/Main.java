@@ -1,5 +1,4 @@
 package com.github.hcsp.datatype;
-
 public class Main {
     public static void main(String[] args) {
         // 这里应该输出true，实际输出的却是false
