@@ -1,5 +1,7 @@
 package com.github.hcsp.datatype;
 
+import java.math.BigDecimal;
+
 public class Main {
     public static void main(String[] args) {
         // 这里应该输出true，实际输出的却是false
@@ -9,6 +11,9 @@ public class Main {
 
     // 判断两个double是否相等
     public static boolean doubleEquals(double a, double b) {
-        return a == b;
+        BigDecimal a1 =new BigDecimal(a);
+        BigDecimal b1 =new BigDecimal(a);
+        return a1.doubleValue() == b1.doubleValue();
+    //    return a == b;
     }
 }
