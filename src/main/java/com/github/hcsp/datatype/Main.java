@@ -9,6 +9,10 @@ public class Main {
 
     // 判断两个double是否相等
     public static boolean doubleEquals(double a, double b) {
-        return a == b;
+        double result = Math.abs(a - b);
+        if (result < 0.000000000001){
+            return true;
+        }
+        return false;
     }
 }
